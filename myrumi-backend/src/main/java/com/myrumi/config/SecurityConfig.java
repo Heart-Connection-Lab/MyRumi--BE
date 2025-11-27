@@ -38,6 +38,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/**",           // 로그인, 토큰 갱신 API
                                 "/api/users/register",    // 회원가입 API
+                                "/actuator/**",           // Actuator 엔드포인트
                                 "/swagger-ui/**",         // Swagger UI
                                 "/v3/api-docs/**",        // Swagger API docs
                                 "/ws/**"                  // WebSocket 경로
